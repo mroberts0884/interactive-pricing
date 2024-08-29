@@ -35,3 +35,16 @@ body {
     background: #04AA6D; /* Green background */
     cursor: pointer; /* Cursor on hover */  
   }
+
+  #views {
+    display: none;
+  }
+
+  .pageViews {
+    display: inline;
+    
+  }
+
+  #pageViewDisplay {
+    padding-right: 0.25%;
+  }
