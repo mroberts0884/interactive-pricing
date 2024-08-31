@@ -8,17 +8,19 @@
   <title>Interactive pricing component</title>
 </head>
 <body>
-<div class="container">
-  <div class="title">
-    <h1>Simple, traffic-based pricing</h1>
-  </div>
-  <div class="subtitle">
-    <p>Sign-up for our 30-day trial. No credit card required. </p>
-  </div>
-  
+<!--Title -->
+  <div class="container">
+    <div class="title">
+      <h1>Simple, traffic-based pricing</h1>
+    </div>
+    <div class="subtitle">
+      <p>Sign-up for our 30-day trial. No credit card required. </p>
+    </div>
+  </div> 
+<!--Body-->
   <div class="body-text">
     <div id="pageviews">
-      <span id="pageViewDisplay" class="pageViews"></span><div class="pageViews">Page Views</div>
+      <span id="pageViewDisplay" class="pageViews"></span><div class="pageViews"> Page Views</div>
       <input type="number" name="views" id="views" readonly>
     </div>
     
@@ -27,14 +29,16 @@
     </div>
     
     <div id="monthly-price">$8/month</div>
-  
+  <div class="time">
     <div class="monthly">Monthly Billing</div>
     <!-- Rounded switch -->
     <label class="switch">
       <input type="checkbox">
       <span class="slider round"></span>
     </label>
-    Yearly Billing 25% discount
+    <div class="yearly">Yearly Billing 25% discount</div>
+  </div>
+    
   
     
       <ul class="list">
@@ -42,20 +46,23 @@
         <li class="checkmark">100% data ownership</li>
         <li class="checkmark">Email reports</li>
       </ul>
-    
-    
+      <div class="start-trial">
+        <button class="start-button">Start my trial</button>
+      </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+   
   </div>
 
   
 
-</div>
+
   
-  Start my trial
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  
+ 
   <script src="script.js"></script>
 </body>
 </html>
