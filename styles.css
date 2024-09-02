@@ -6,36 +6,30 @@ body {
     margin: 0;
     padding: 0;
     background-image: url("images/bg-pattern.svg");
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    
 }
 
 .slidecontainer {
-    width: 100%; /* Width of the outside container */
+    width: 80%; /* Width of the outside container */
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-bottom: 2em;
+    justify-content: center;
+    grid-column: 1/ -1;
+    
   }
-  .slider {
-    width: 100%
+.slider1 {
+    width: 100%;
+    box-sizing: border-box;
   }
 /* Mouse-over effects */
   #slider:hover {
     opacity: 1; /* Fully shown on mouse-over */
   }
   
-  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
-  #slider::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
-    appearance: none;
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: #04AA6D; /* Green background */
-    cursor: pointer; /* Cursor on hover */
-  }
-  
-  #slider::-moz-range-thumb {
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: #04AA6D; /* Green background */
-    cursor: pointer; /* Cursor on hover */  
-  }
-
   #views {
     display: none;
   }
@@ -69,6 +63,8 @@ body {
   display: grid;
   column-gap: 0.75em;
   text-align: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
 }
 
 /*Body*/
@@ -76,42 +72,37 @@ body {
 .body-text {
   background-color: rgb(255, 255, 255);
   display: grid;
-  justify-content: center;
-  align-content: center;
-  row-gap: 1em;
-  padding: 5vh;
+  place-items: center;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  overflow: hidden;
+  height: auto;
+  width: 80%;
 } 
 .time {
   display: grid;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  grid-template-columns: repeat(3,1fr);
+  grid-column: 1/ -1;
 }
 
-.slidecontainer {
-  padding-bottom: 2em;
+#monthly-price {
+  display: grid;
+  
 }
 
 
-@media only screen and (max-width: 600px) {
-  .container {
-    grid-template-columns: 1fr;
-  }
-
-  .body-text {
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: 1fr;
-    
-
-  }
 
 
-  .time {
-    grid-template-columns: repeat(3,1fr);
-  }
+
+
+
+
 
   
   
-}
+  
+
 
  /* The switch - the box around the slider */
 .switch {

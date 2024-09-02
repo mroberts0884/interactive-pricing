@@ -43,6 +43,8 @@ toggle.oninput = function() {
     if (this.checked) {
          var newValue = currentValue - percentage;
         output.textContent = "$" + newValue.toFixed(2) + "/month"; // Update the displayed value
-        
+
+    } else {
+        output.textContent = "$" + parseFloat(slider.value).toFixed(2) + "/month"; // Reset to original slider value when unchecked
     }
 }
