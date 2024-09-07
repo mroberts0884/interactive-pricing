@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&display=swap" rel="stylesheet">
   <title>Interactive pricing component</title>
 </head>
 <body>
@@ -20,23 +23,28 @@
 <!--Body-->
   <div class="body-text">
     <div id="pageviews">
-      <span id="pageViewDisplay" class="pageViews"></span><div class="pageViews"> Page Views</div>
+      <span id="pageViewDisplay" class="pageViews"></span><div class="pageViews"> Pageviews</div>
       <input type="number" name="views" id="views" readonly>
     </div>
 
-    <div id="monthly-price">$8/month</div>
+    <div id="monthly-price">
+      <div class="price">$8</div><div class="month">/month</div>
+    </div>
     <div class="slidecontainer">
       <input type="range" min="8" max="36" value="8" class="slider1" id="myRange">
     </div>
 
     <div class="time">
-    <div class="monthly">Monthly Billing</div>
+      <div class="monthly">Monthly Billing</div>
     <!-- Rounded switch -->
-    <label class="switch">
-      <input type="checkbox" id="toggle-switch">
-      <span class="slider round"></span>
-    </label>
-    <div class="yearly">Yearly Billing 25% discount</div>
+      <label class="switch">
+        <input type="checkbox" id="toggle-switch">
+        <span class="slider round"></span>
+      </label>
+    <div class="yearly">
+      <div class="year">Yearly Billing</div>
+      <div class="discount">-25%</div>
+    </div>
   </div>
     
     
